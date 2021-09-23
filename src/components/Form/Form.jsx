@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Button } from "../Button";
+import { Input } from "../Input";
 
 function getId() {
   return (
@@ -16,8 +17,6 @@ export function Form({ onClick }) {
   };
 
   const onClickAdd = () => {
-    console.log("onClickAdd Form");
-
     const todoshka = {
       text: text,
       checked: false,
@@ -34,10 +33,10 @@ export function Form({ onClick }) {
       style={{
         display: "flex",
         alignItems: "center",
+        position: "relative",
       }}
     >
-      <input
-        style={{ fontSize: 100 }}
+      <Input
         value={text}
         onChange={onChangeInput}
         placeholder="Сделай же что-нибудь!"
