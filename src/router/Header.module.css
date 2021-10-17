@@ -1,0 +1,80 @@
+.header {
+  padding-top: 42px;
+  background-color: #404145;
+}
+
+.header__menu_btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95px;
+  height: 30px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  background: url(../assets/images/menu.svg) no-repeat center left;
+  background-size: contain;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.header__menu_btn:hover {
+  transform: scale(1.1);
+}
+
+.header__control {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.header__control:hover {
+  transform: scale(1.2);
+}
+
+.header__search_btn {
+  background: url(../assets/images/search.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.header__user_btn {
+  background: url(../assets/images/user.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.header__compare_btn {
+  background: url(../assets/images/histogram3.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.header__basket_btn {
+  background: url(../assets/images/basket.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.header__favorite_btn {
+  background: url(../assets/images/heart.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.header__controls {
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.header__search {
+  display: flex;
+  justify-content: space-between;
+} */
