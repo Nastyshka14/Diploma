@@ -1,0 +1,9 @@
+.user__container {
+  display: flex;
+  justify-content: center;
+}
+.user__window {
+  width: 200px;
+  background-color: rgb(179, 177, 177);
+  border: 2px solid rgb(35, 35, 35);
+}
