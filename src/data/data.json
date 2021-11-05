@@ -1,0 +1,521 @@
+[
+  {
+    "id": 2,
+    "title": "Удлиненное пальто с поясом",
+    "description": "Длинное двубортное пальто из смесовой шерсти. Длинные рукава, спущенные плечевые швы, передние прорезные карманы, пояс. Застегивается на пуговицы.",
+    "image": "./images/data/1.jpg",
+    "price": "279.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 3,
+    "title": "Базовое пальто",
+    "description": "Пальто из смесовой шерсти. Длинные рукава и подплечники. Прорезные передние карманы. Двубортная застежка на пуговицы.",
+    "image": "./images/data/2.jpg",
+    "price": "279.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 4,
+    "title": "Базовое пальто с поясом",
+    "description": "Пальто из смесовой шерсти. Длинные рукава и подплечники. Прорезные передние карманы. Двубортная застежка на пуговицы.",
+    "image": "./images/data/3.jpg",
+    "price": "219.00 BYN",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 5,
+    "title": "Пальто с узором в елочку",
+    "description": "Шерстяное пальто с длинными рукавами и воротником с лацканами. Передние карманы с рантом, декоративный нагрудный карман. Двубортная модель, застегивается на пуговицы. Шлица сзади.",
+    "image": "./images/data/4.jpg",
+    "price": "279.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 6,
+    "title": "Базовое пальто",
+    "description": "Пальто с лацканами, длинными рукавами и подплечниками. Передние прорезные карманы. Двубортная модель на пуговицах, представлена в нескольких расцветках.",
+    "image": "./images/data/5.jpg",
+    "price": "179.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 7,
+    "title": "Базовое пальто",
+    "description": "Пальто с лацканами, длинными рукавами и подплечниками. Передние прорезные карманы. Двубортная модель на пуговицах, представлена в нескольких расцветках.",
+    "image": "./images/data/6.jpg",
+    "price": "179.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 8,
+    "title": "Тренч из непромокаемой ткани",
+    "description": "Тренч из водоооткаливающей ткани с капюшоном. Двубортная застежка на пуговицы, воротник с лацканами, длинные рукава и передние накладные карманы.",
+    "image": "./images/data/7.jpg",
+    "price": "139.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 9,
+    "title": "Стеганый жилет",
+    "description": "Стеганый жилет из водостойкой ткани с высоким воротником. Передние прорезные карманы с флисовой подкладкой, регулируемый пояс на шнурке, застегивается на молнию и кнопки.",
+    "image": "./images/data/8.jpg",
+    "price": "89.99 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 10,
+    "title": "Стеганое пальто с геометрическим узором",
+    "description": "Стеганое пальто с капюшоном, боковыми карманами и застежкой-молнией.",
+    "image": "./images/data/9.jpg",
+    "price": "159.00 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 11,
+    "title": "Стеганая куртка из сатина",
+    "description": "Куртка оверсайз с высоким воротником и капюшоном. Застегивается на молнию и клапан. Модель представлена в нескольких расцветках.",
+    "image": "./images/data/10.jpg",
+    "price": "99.99 BYN",
+    "type": "coat",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 12,
+    "title": "Плотная рубашка карго в тонкий рубчик",
+    "description": "Куртка-рубашка с длинными рукавами. Застежка спереди на пуговицы. Спереди карманы с клапаном и пуговицей. Цвета в ассортименте.",
+    "image": "./images/data/11.jpg",
+    "price": "59.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 13,
+    "title": "Рубашка оверсайз из искусственной кожи",
+    "description": "Рубашка свободного кроя из искусственной кожи. Воротник, длинные рукава, передний карман. Застегивается на кнопки.",
+    "image": "./images/data/12.jpg",
+    "price": "279.00 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 14,
+    "title": "Блуза с принтом и V-образным вырезом",
+    "description": "Атласная блуза с V-образным вырезом, объемными длинными рукавами и пуговицами на поясе.",
+    "image": "./images/data/13.jpg",
+    "price": "79.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 15,
+    "title": "Рубашка из искусственной кожи с карманами",
+    "description": "",
+    "image": "./images/data/14.jpg",
+    "price": "99.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 16,
+    "title": "Рубашка из сатина с длинными рукавами",
+    "description": "",
+    "image": "./images/data/15.jpg",
+    "price": "69.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 17,
+    "title": "Корсетная рубашка облегающего кроя из поплина",
+    "description": "",
+    "image": "./images/data/16.jpg",
+    "price": "179.00 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 18,
+    "title": "Рубашка оверсайз из поплина с длинными рукавами",
+    "description": "",
+    "image": "./images/data/17.jpg",
+    "price": "69.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 19,
+    "title": "Длинная рубашка оверсайз с карманом",
+    "description": "",
+    "image": "./images/data/18.jpg",
+    "price": "69.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 20,
+    "title": "Вельветовая плотная рубашка",
+    "description": "",
+    "image": "./images/data/19.jpg",
+    "price": "159.00 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 21,
+    "title": "Рубашка с короткими рукавами, ажурной вышивкой и карманом",
+    "description": "",
+    "image": "./images/data/20.jpg",
+    "price": "69.99 BYN",
+    "type": "shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 22,
+    "title": "Топ без рукавов",
+    "description": "",
+    "image": "./images/data/21.jpg",
+    "price": "39.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 23,
+    "title": "Футболка с психоделическим принтом «Зебра»",
+    "description": "",
+    "image": "./images/data/22.jpg",
+    "price": "59.99 РУБ",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 24,
+    "title": "Топ с запа́хом",
+    "description": "",
+    "image": "./images/data/23.jpg",
+    "price": "49.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 25,
+    "title": "Футболка Rolling Stones",
+    "description": "",
+    "image": "./images/data/24.jpg",
+    "price": "59.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 26,
+    "title": "Футболка оверсайз с принтом",
+    "description": "",
+    "image": "./images/data/26.jpg",
+    "price": "69.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 27,
+    "title": "Футболка «Микки»",
+    "description": "Футболка с круглым вырезом и принтом.",
+    "image": "./images/data/25.jpg",
+    "price": "49.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 28,
+    "title": "Футболка с принтом работы Рауля дель Соль",
+    "description": "Футболка с круглым вырезом и принтом.",
+    "image": "./images/data/27.jpg",
+    "price": "49.99 BYN",
+    "type": "t-shirt",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 29,
+    "title": "Футболка «Минни Маус» в спортивном стиле",
+    "description": "Футболка с круглым вырезом и принтом.",
+    "image": "./images/data/28.jpg",
+    "price": "49.99 BYN",
+    "type": "t-shirt",
+    "brand": "Bershka",
+    "select": false
+  },
+  {
+    "id": 30,
+    "title": "Брюки из искусственной кожи с защипами",
+    "description": "Брюки прямого кроя с высокой посадкой и защипами.",
+    "image": "./images/data/31.jpg",
+    "price": "99.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 31,
+    "title": "Легинсы из искусственной кожи с разрезами",
+    "description": "Легинсы из искусственной кожи с высокой посадкой и разрезами по низу спереди.",
+    "image": "./images/data/32.jpg",
+    "price": "99.99 РУБ",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 32,
+    "title": "Брюки с высокой посадкой и напылением",
+    "description": "Брюки из ткани с вощеным покрытием. Высокая посадка, пять карманов и застежка на молнию и пуговицу спереди.",
+    "image": "./images/data/33.jpg",
+    "price": "59.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 33,
+    "title": "Укороченные расклешенные брюки из твила",
+    "description": "Расклешенные брюки с высокой посадкой. Карманы, застежка на молнию и пуговицу.",
+    "image": "./images/data/34.jpg",
+    "price": "59.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 34,
+    "title": "Джинсы свободного кроя из твила",
+    "description": "Джинсы из твила с высокой посадкой, сборкой на талии, передними карманами, отворотами по низу и застежкой на молнию и металлическую пуговицу.",
+    "image": "./images/data/35.jpg",
+    "price": "59.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 35,
+    "title": "Брюки из ткани с вощеным покрытием с очень высокой талией",
+    "description": "Брюки с высокой посадкой, пятью карманами, вощеным покрытием и застежкой на молнию и металлическую пуговицу.",
+    "image": "./images/data/36.jpg",
+    "price": "59.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 36,
+    "title": "Брюки прямого кроя из искусственной кожи",
+    "description": "",
+    "image": "./images/data/37.jpg",
+    "price": "89.99 BYN",
+    "type": "trousers",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 37,
+    "title": "Джоггеры из мягкой ткани в стиле преппи",
+    "description": "",
+    "image": "./images/data/38.jpg",
+    "price": "69.99 BYN",
+    "type": "trousers",
+    "brand": "Bershka",
+    "select": false
+  },
+  {
+    "id": 38,
+    "title": "Джинсы mom fit облегающего кроя",
+    "description": "",
+    "image": "./images/data/41.jpg",
+    "price": "69.99 BYN",
+    "type": "jeans",
+    "brand": "Bershka",
+    "select": false
+  },
+  {
+    "id": 39,
+    "title": "Джинсы mom fit облегающего кроя",
+    "description": "",
+    "image": "./images/data/42.jpg",
+    "price": "69.99 РУБ",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 40,
+    "title": "Укороченные расклешенные джинсы",
+    "description": "",
+    "image": "./images/data/43.jpg",
+    "price": "69.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 41,
+    "title": "Джинсы в стиле минимализм",
+    "description": "Брюки из бесшовной ткани с высокой посадкой и широкими штанинами. Застежка-молния и пуговица.",
+    "image": "./images/data/44.jpg",
+    "price": "99.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 42,
+    "title": "Джинсы mom fit",
+    "description": "Классическая модель в стиле 90-х с широкими штанинами и высокой посадкой никогда не выйдет из моды. Назад в будущее.",
+    "image": "./images/data/45.jpg",
+    "price": "59.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 43,
+    "title": "Джинсы прямого кроя",
+    "description": "Джинсы с высокой посадкой и пятью карманами. Застежка на молнию и металлическую пуговицу..",
+    "image": "./images/data/46.jpg",
+    "price": "99.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 44,
+    "title": "Джинсы с очень высокой посадкой в винтажном стиле",
+    "description": "Джинсы-скинни из слегка эластичной ткани, с высокой посадкой, разрезами, пятью карманами, застежкой на молнию и пуговицу.",
+    "image": "./images/data/47.jpg",
+    "price": "59.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 45,
+    "title": "Джинсы клеш в винтажном стиле",
+    "description": "Расклешенные джинсы с высокой посадкой и пятью карманами. Застежка на молнию и металлическую пуговицу.",
+    "image": "./images/data/48.jpg",
+    "price": "99.99 BYN",
+    "type": "jeans",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 46,
+    "title": "Джинсы mom fit облегающего кроя",
+    "description": "",
+    "image": "./images/data/41.jpg",
+    "price": "69.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 47,
+    "title": "Джинсы mom fit облегающего кроя",
+    "description": "",
+    "image": "./images/data/42.jpg",
+    "price": "69.99 РУБ",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 48,
+    "title": "Укороченные расклешенные джинсы",
+    "description": "",
+    "image": "./images/data/43.jpg",
+    "price": "69.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 49,
+    "title": "Джинсы в стиле минимализм",
+    "description": "Брюки из бесшовной ткани с высокой посадкой и широкими штанинами. Застежка-молния и пуговица.",
+    "image": "./images/data/44.jpg",
+    "price": "99.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 50,
+    "title": "Джинсы mom fit",
+    "description": "Классическая модель в стиле 90-х с широкими штанинами и высокой посадкой никогда не выйдет из моды. Назад в будущее.",
+    "image": "./images/data/45.jpg",
+    "price": "59.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 51,
+    "title": "Джинсы прямого кроя",
+    "description": "Джинсы с высокой посадкой и пятью карманами. Застежка на молнию и металлическую пуговицу..",
+    "image": "./images/data/46.jpg",
+    "price": "99.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 52,
+    "title": "Джинсы с очень высокой посадкой в винтажном стиле",
+    "description": "Джинсы-скинни из слегка эластичной ткани, с высокой посадкой, разрезами, пятью карманами, застежкой на молнию и пуговицу.",
+    "image": "./images/data/47.jpg",
+    "price": "59.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  },
+  {
+    "id": 53,
+    "title": "Джинсы клеш в винтажном стиле",
+    "description": "Расклешенные джинсы с высокой посадкой и пятью карманами. Застежка на молнию и металлическую пуговицу.",
+    "image": "./images/data/48.jpg",
+    "price": "99.99 BYN",
+    "type": "dress",
+    "brand": "Stradivarius",
+    "select": false
+  }
+]

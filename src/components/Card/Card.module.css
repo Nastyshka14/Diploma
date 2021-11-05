@@ -1,0 +1,12 @@
+.card__image {
+  width: 40%;
+}
+.card__like_btn {
+  width: 25px;
+  height: 25px;
+  background: white;
+  color: rebeccapurple;
+  border: none;
+  background: url(../../assets/images/nav/heart.svg) no-repeat center left;
+  background-size: contain;
+}

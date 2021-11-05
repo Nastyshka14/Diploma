@@ -1,0 +1,10 @@
+.home__container {
+  display: flex;
+  flex-direction: row;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}

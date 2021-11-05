@@ -40,7 +40,7 @@
   height: 50px;
   background: white;
   border: none;
-  background: url(../../assets/images/right_arrow.svg) no-repeat center left;
+  background: url(../../assets/images/nav/right_arrow.svg) no-repeat center left;
   background-size: contain;
   cursor: pointer;
   transition: 1s;
@@ -50,7 +50,7 @@
   height: 50px;
   background: white;
   border: none;
-  background: url(../../assets/images/left_arrow.svg) no-repeat center left;
+  background: url(../../assets/images/nav/left_arrow.svg) no-repeat center left;
   background-size: contain;
   cursor: pointer;
   transition: 1s;

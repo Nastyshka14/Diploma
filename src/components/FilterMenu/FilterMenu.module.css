@@ -1,0 +1,22 @@
+.filter {
+  position: relative;
+}
+.filter__popup {
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  background: white;
+  box-shadow: 0px 5px 15px violet;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 0px;
+  width: 160px;
+}
+.filter__label {
+  display: flex;
+  align-items: center;
+}
+.active {
+  color: brown;
+  background-color: chartreuse;
+}

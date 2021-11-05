@@ -1,0 +1,7 @@
+.main {
+  display: flex;
+}
+.active {
+  color: brown;
+  background-color: chartreuse;
+}

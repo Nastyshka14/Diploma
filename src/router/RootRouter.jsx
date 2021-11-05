@@ -2,12 +2,20 @@ import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import styles from "./Header.module.css";
 import { User } from "../components/User";
 import { Menu } from "../components/Menu";
+import { HomePage } from "../components/HomePage";
+import { SliderContainer } from "../components/Slider";
+import { useState } from "react";
+import { SearchInput } from "../components/SearchInput";
+import data from "../data/data.json";
+import React from "react";
+import { Form } from "../components/Form";
+import { SearchPage } from "../components/SearchPage";
 export function RootRouter() {
   return (
     <BrowserRouter>
       <div className={styles.header}>
         <div className={styles.header__content}>
-          <Link to="/menu">
+          <Link to="/homepage">
             <div className={styles.header__menu}>
               <button type="button" className={styles.header__menu_btn}>
                 Меню
@@ -24,25 +32,15 @@ export function RootRouter() {
             </div>
           </Link>
 
-          <div className={styles.header__controls}>
-            {" "}
-            <div className={styles.header__search}>
-              {/* <form action="/search" method="get" className={styles.header__search_form}>
-              <input
-                type="text"
-                autocomplete="off"
-                className={`${styles.header__search_input}`}
-                name="q"
-                value=""
-                placeholder="Поиск"
-              />
-              <input type="hidden" name="lang" value="ru" />
-            </form> */}
-              <button
-                type="button"
-                className={`${styles.header__search_btn} ${styles.header__control}`}
-              ></button>
-            </div>
+          <div className={`${styles.header__controls} ${styles.header__show}`}>
+            <Link to="/search">
+              <div className={styles.header__search}>
+                <button
+                  type="button"
+                  className={`${styles.header__search_btn} ${styles.header__control}`}
+                ></button>
+              </div>
+            </Link>
             <Link to="/user">
               <div className={styles.header__user}>
                 <button
@@ -68,7 +66,6 @@ export function RootRouter() {
               </div>
             </Link>
             <Link to="/basket">
-              {" "}
               <div className={styles.header__basket}>
                 <button
                   type="button"
@@ -80,12 +77,17 @@ export function RootRouter() {
         </div>
 
         <Switch>
-          <Route exact path="/"></Route>
+          <Route exact path="/">
+            <SliderContainer />
+          </Route>
+          <Route exact path="/search">
+            <SearchPage />
+          </Route>
           <Route exact path="/user">
             <User />
           </Route>
-          <Route exact path="/menu">
-            <Menu />
+          <Route exact path="/homepage">
+            <HomePage />
           </Route>
         </Switch>
       </div>

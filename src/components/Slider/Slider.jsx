@@ -2,7 +2,6 @@ import styles from "./Slider.module.css";
 import React from "react";
 
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -13,6 +12,8 @@ export function SliderContainer() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     nextArrow: (
       <div>
         <div className={styles.next__slick_arrow}></div>
@@ -33,13 +34,12 @@ export function SliderContainer() {
     },
     {
       id: 2,
-      title:
-        "https://content.asos-media.com/-/media/homepages/unisex/generic-hp/oct-2021/microsoftteams-image-(10).png",
+      src: "https://a.lmcdn.ru/pi/bs894x561/2/10/w_1788x1122_6555_az.jpeg",
       label: "Officia non provident dolor esse et neque.",
     },
     {
       id: 3,
-      src: "https://imgcdn.zarina.ru/upload/iblock/d49/d494327a6d85b74f898c9fb410e2aeef.jpg",
+      src: "https://a.lmcdn.ru/pi/bs894x561/0/79/w_hp_1_warm-winter-collections.jpg",
       label: "Ut recusandae vel vitae molestiae id soluta.",
     },
   ];
