@@ -14,17 +14,17 @@ import { Card } from "../Card";
 import { Form } from "../Form";
 
 export function SearchPage() {
-  const [emojies, setEmojies] = useState(data);
-  const [cards, setCards] = useState(emojies);
-  const [filteredCards, setFilteredCards] = useState(cards);
+  const [searchCards, setSearchCards] = useState(data);
+
+  const [filteredCards, setFilteredCards] = useState(searchCards);
 
   const filterCards = (event) => {
-    const selectCoat = cards.filter((card) => card.type === "coat");
-    const selectShirt = cards.filter((card) => card.type === "shirt");
-    const selectTshirt = cards.filter((card) => card.type === "t-shirt");
-    const selectTrousers = cards.filter((card) => card.type === "trousers");
+    const selectCoat = searchCards.filter((card) => card.type === "coat");
+    const selectShirt = searchCards.filter((card) => card.type === "shirt");
+    const selectTshirt = searchCards.filter((card) => card.type === "t-shirt");
+    const selectTrousers = searchCards.filter((card) => card.type === "trousers");
     if (event.target.id === "all") {
-      setFilteredCards(cards);
+      setFilteredCards(searchCards);
     } else if (event.target.id === "coat") {
       setFilteredCards(selectCoat);
     } else if (event.target.id === "shirt") {
@@ -36,9 +36,9 @@ export function SearchPage() {
     }
   };
 
-  const searchEmoji = (inputValue) => {
+  const searchCard = (inputValue) => {
     if (inputValue) {
-      setEmojies([
+      setSearchCards([
         ...data.filter(
           (emoji) =>
             emoji.title.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()) ||
@@ -47,9 +47,10 @@ export function SearchPage() {
         ),
       ]);
     } else {
-      setEmojies(data);
+      setSearchCards(data);
     }
   };
+
   return (
     <div className={styles.home__container}>
       <Menu
@@ -60,9 +61,9 @@ export function SearchPage() {
       <SortMenu items={sorts} onClickItem={(name) => console.log(name)} />
       <FilterMenu items={filters} onClickItem={(name) => console.log(name)} />
       <div className={styles.emojiListWrapp}>
-        <Form searchEmoji={searchEmoji} />
+        <Form searchCard={searchCard} />
         <ul className={styles.emojiList}>
-          {emojies.map((item) => {
+          {searchCards.map((item) => {
             return (
               <Card
                 key={item.id}
@@ -75,6 +76,19 @@ export function SearchPage() {
               />
             );
           })}
+          {/* {filteredCards.map((item) => {
+            return (
+              <Card
+                key={item.id}
+                brand={item.brand}
+                id={item.id}
+                image={item.image}
+                title={item.title}
+                price={item.price}
+                select={item.select}
+              />
+            );
+          })} */}
         </ul>
       </div>
     </div>
