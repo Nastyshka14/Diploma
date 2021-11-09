@@ -1,19 +1,17 @@
-import styles from "./HomePage.module.css";
-import React, { useEffect, useState } from "react";
-import { Menu } from "../Menu";
-import data from "../../data/data.json";
-import categories from "../../data/categories.json";
-import filters from "../../data/filter.json";
-
-import { SortMenu } from "../SortMenu";
-import { FilterMenu } from "../FilterMenu";
-import { Card } from "../Card";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ACTIONS } from "../../redux/constants";
-import { useHistory } from "react-router";
+import { Card } from "../Card";
+import { FilterMenu } from "../FilterMenu";
+import { Menu } from "../Menu";
+import { SortMenu } from "../SortMenu";
+import categories from "../../data/categories.json";
+import styles from "./Trousers.module.css";
 
-export function HomePage() {
-  const filteredCards = useSelector((state) => state.card.filteredCards);
+export function Trousers() {
+  const ccards = useSelector((state) => state.card.cards).filter(
+    (item) => item.type === "trousers"
+  );
 
   const dispatch = useDispatch();
 
@@ -21,26 +19,21 @@ export function HomePage() {
     dispatch({ type: ACTIONS.ADD_CARD, newCard });
   };
 
-  const addToFavorites = (newCard) => {
-    dispatch({ type: ACTIONS.ADD_TO_FAVORITES, newCard });
+  // const show = useSelector((state) => state.card.show);
+
+  // const showFilters = () => {
+  //   dispatch({ type: ACTIONS.SHOW_FILTERS });
+  // };
+
+  const sortReset = () => {
+    dispatch({ type: ACTIONS.SORT_RESET });
   };
 
-  const showCard = (id) => {
-    dispatch({ type: ACTIONS.SHOW_ABOUT, id });
-  };
-  const sortUpdateUp = () => {
-    dispatch({ type: ACTIONS.SORT_UPDATE_UP });
-  };
-
-  const sortUpdateDown = () => {
-    dispatch({ type: ACTIONS.SORT_UPDATE_DOWN });
-  };
-
-  const sortLowToHight = () => {
+  const sortLowToHigh = () => {
     dispatch({ type: ACTIONS.SORT_LOW_TO_HIGHT });
   };
 
-  const sortHightToLow = () => {
+  const sortHighToLow = () => {
     dispatch({ type: ACTIONS.SORT_HIGHT_TO_LOW });
   };
 
@@ -61,23 +54,38 @@ export function HomePage() {
   //     setFilteredCards(selectTrousers);
   //   }
   // };
+  // const sortCards = (event) => {
+  //   const sortByUpdate = filteredCards.sort((a, b) => b.id - a.id);
+  //   const sortByPrice = filteredCards.sort((a, b) => b.type - a.type);
+  //   const sortByABC = filteredCards.sort((a, b) => b.title - a.title);
+  //   if (event.target.id === "update") {
+  //     setSortedCards(sortByUpdate);
+  //   } else if (event.target.id === "price") {
+  //     setSortedCards(sortByPrice);
+  //   } else if (event.target.id === "ABC") {
+  //     setSortedCards(sortByABC);
+  //   } else {
+  //     setSortedCards(filteredCards);
+  //   }
+  // };
 
   return (
     <div className={styles.home__container}>
-      <Menu />
-      <SortMenu
-        sortUpdateUp={sortUpdateUp}
-        sortUpdateDown={sortUpdateDown}
-        sortHightToLow={sortHightToLow}
-        sortLowToHight={sortLowToHight}
+      <Menu
+        items={categories}
+        // filterCards={filterCards}
       />
-      <FilterMenu items={filters} />
+      <SortMenu sortReset={sortReset} sortHighToLow={sortHighToLow} sortLowToHigh={sortLowToHigh} />
+      <FilterMenu
+      // items={filters}
+      />
       <div className={styles.wrap}>
         <div className={styles.main}>
-          {filteredCards.map((item) => {
+          {ccards.map((item) => {
             return (
               <Card
                 key={item.id}
+                {...item}
                 brand={item.brand}
                 id={item.id}
                 image={item.image}
@@ -85,8 +93,6 @@ export function HomePage() {
                 price={item.price}
                 select={item.select}
                 addToCart={addToCart}
-                addToFavorites={addToFavorites}
-                showCard={showCard}
               />
             );
           })}

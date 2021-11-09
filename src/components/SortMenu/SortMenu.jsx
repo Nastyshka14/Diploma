@@ -1,29 +1,23 @@
 import React, { useState } from "react";
 import styles from "./SortMenu.module.css";
 
-export function SortMenu({ items, onClick }) {
-  const [activeItem, setActiveItem] = useState(null);
-  const onSelectItem = (index) => setActiveItem(index);
+export function SortMenu({ sortUpdateUp, sortUpdateDown, sortLowToHight, sortHightToLow }) {
   return (
     <div className={styles.wrap}>
       <div className={styles.main}>
         <span className={styles.title}>Сортировка по:</span>
-        <button
-          className={activeItem === null ? styles.active : ""}
-          onClick={() => onSelectItem(null)}
-        >
-          популярности
+        <button className={styles.sort} onClick={() => sortUpdateUp()}>
+          update up
         </button>
-        {items &&
-          items.map((name, index) => (
-            <button
-              className={activeItem === index ? styles.active : ""}
-              onClick={() => onSelectItem(index)}
-              key={`${name}_${index}`}
-            >
-              {name}
-            </button>
-          ))}
+        <button className={styles.sort} onClick={() => sortUpdateDown()}>
+          update down
+        </button>
+        <button className={styles.sort} onClick={() => sortLowToHight()}>
+          price up
+        </button>
+        <button className={styles.sort} onClick={() => sortHightToLow()}>
+          price down
+        </button>
       </div>
     </div>
   );

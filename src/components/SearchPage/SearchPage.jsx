@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import categories from "../../data/categories.json";
 import filters from "../../data/filter.json";
-import sorts from "../../data/sort.json";
+
 import data from "../../data/data.json";
 import styles from "./SearchPage.module.css";
 import { HomePage } from "../HomePage";
@@ -40,10 +40,10 @@ export function SearchPage() {
     if (inputValue) {
       setSearchCards([
         ...data.filter(
-          (emoji) =>
-            emoji.title.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()) ||
-            emoji.brand.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()) ||
-            emoji.description.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())
+          (card) =>
+            card.title.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()) ||
+            card.brand.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase()) ||
+            card.description.toLocaleLowerCase().includes(inputValue.toLocaleLowerCase())
         ),
       ]);
     } else {
@@ -58,11 +58,14 @@ export function SearchPage() {
         filterCards={filterCards}
         onSelectItem={(item) => console.log(item)}
       />
-      <SortMenu items={sorts} onClickItem={(name) => console.log(name)} />
+      <SortMenu
+        // items={sorts}
+        onClickItem={(name) => console.log(name)}
+      />
       <FilterMenu items={filters} onClickItem={(name) => console.log(name)} />
       <div className={styles.emojiListWrapp}>
         <Form searchCard={searchCard} />
-        <ul className={styles.emojiList}>
+        <ul className={styles.main}>
           {searchCards.map((item) => {
             return (
               <Card

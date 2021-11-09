@@ -1,0 +1,11 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+.menu__container {
+  width: 300px;
+}
+.active {
+  color: red;
+  background-color: royalblue;
+}

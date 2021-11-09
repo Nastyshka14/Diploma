@@ -1,17 +1,15 @@
-// import { useState, createContext } from "react";
-// import { Provider, useSelector, useDispatch } from "react-redux";
-import { SliderContainer } from "./components/Slider";
 import styles from "./App.css";
 import { RootRouter } from "./router/RootRouter";
-import { HomePage } from "./components/HomePage";
-// import { store } from "./redux/store";
-// import { RootRouter } from "./router/RootRouter";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 function App() {
   return (
-    <div className={styles.App}>
-      <RootRouter />
-    </div>
+    <Provider store={store}>
+      <div className={styles.App}>
+        <RootRouter />
+      </div>
+    </Provider>
   );
 }
 

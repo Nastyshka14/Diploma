@@ -1,15 +1,18 @@
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import styles from "./Header.module.css";
 import { User } from "../components/User";
-import { Menu } from "../components/Menu";
 import { HomePage } from "../components/HomePage";
 import { SliderContainer } from "../components/Slider";
-import { useState } from "react";
-import { SearchInput } from "../components/SearchInput";
-import data from "../data/data.json";
-import React from "react";
-import { Form } from "../components/Form";
 import { SearchPage } from "../components/SearchPage";
+import { CardItem } from "../components/CardItem";
+import { Cart } from "../components/Cart";
+import { Coat } from "../components/Coat";
+import { Shirt } from "../components/Shirt";
+import { Tshirt } from "../components/Tshirt";
+import { Trousers } from "../components/Trousers";
+import { Jeans } from "../components/Jeans";
+import { Menu } from "../components/Menu";
+import { Favorites } from "../components/Favorites";
 export function RootRouter() {
   return (
     <BrowserRouter>
@@ -88,6 +91,30 @@ export function RootRouter() {
           </Route>
           <Route exact path="/homepage">
             <HomePage />
+          </Route>
+          <Route exact path="/favorite">
+            <Favorites />
+          </Route>
+          <Route exact path="/card/:id">
+            <CardItem />
+          </Route>
+          <Route exact path="/basket">
+            <Cart />
+          </Route>
+          <Route exact path="/coat">
+            <Coat />
+          </Route>
+          <Route exact path="/shirt">
+            <Shirt />
+          </Route>
+          <Route exact path="/tshirt">
+            <Tshirt />
+          </Route>
+          <Route exact path="/trousers">
+            <Trousers />
+          </Route>
+          <Route exact path="/jeans">
+            <Jeans />
           </Route>
         </Switch>
       </div>

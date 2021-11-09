@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.card__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card__brand {
+  text-transform: uppercase;
+}
+.card__image {
+  width: 10%;
+}
+.card {
+  display: flex;
+  margin: 5px;
+  border: 2px solid black;
+  box-shadow: black;
+}
+.card__order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
