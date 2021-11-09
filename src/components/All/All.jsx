@@ -10,7 +10,7 @@ import categories from "../../data/categories.json";
 import styles from "./All.module.css";
 
 export function All() {
-  const cards = useSelector((state) => state.card.cards);
+  const filteredCards = useSelector((state) => state.card.filteredCards);
 
   const dispatch = useDispatch();
 
@@ -53,20 +53,6 @@ export function All() {
   //     setFilteredCards(selectTrousers);
   //   }
   // };
-  // const sortCards = (event) => {
-  //   const sortByUpdate = filteredCards.sort((a, b) => b.id - a.id);
-  //   const sortByPrice = filteredCards.sort((a, b) => b.type - a.type);
-  //   const sortByABC = filteredCards.sort((a, b) => b.title - a.title);
-  //   if (event.target.id === "update") {
-  //     setSortedCards(sortByUpdate);
-  //   } else if (event.target.id === "price") {
-  //     setSortedCards(sortByPrice);
-  //   } else if (event.target.id === "ABC") {
-  //     setSortedCards(sortByABC);
-  //   } else {
-  //     setSortedCards(filteredCards);
-  //   }
-  // };
 
   return (
     <div className={styles.home__container}>
@@ -77,7 +63,7 @@ export function All() {
       />
       <div className={styles.wrap}>
         <div className={styles.main}>
-          {cards.map((item) => {
+          {filteredCards.map((item) => {
             return (
               <Card
                 key={item.id}

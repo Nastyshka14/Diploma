@@ -63,33 +63,37 @@ export function HomePage() {
   // };
 
   return (
-    <div className={styles.home__container}>
+    <div className={styles.wrap}>
       <Menu />
-      <SortMenu
-        sortUpdateUp={sortUpdateUp}
-        sortUpdateDown={sortUpdateDown}
-        sortHightToLow={sortHightToLow}
-        sortLowToHight={sortLowToHight}
-      />
-      <FilterMenu items={filters} />
-      <div className={styles.wrap}>
-        <div className={styles.main}>
-          {filteredCards.map((item) => {
-            return (
-              <Card
-                key={item.id}
-                brand={item.brand}
-                id={item.id}
-                image={item.image}
-                title={item.title}
-                price={item.price}
-                select={item.select}
-                addToCart={addToCart}
-                addToFavorites={addToFavorites}
-                showCard={showCard}
-              />
-            );
-          })}
+      <div className={styles.container}>
+        <div className={styles.filters}>
+          <SortMenu
+            sortUpdateUp={sortUpdateUp}
+            sortUpdateDown={sortUpdateDown}
+            sortHightToLow={sortHightToLow}
+            sortLowToHight={sortLowToHight}
+          />
+          <FilterMenu items={filters} />
+        </div>
+        <div className={styles.items}>
+          <div className={styles.main}>
+            {filteredCards.map((item) => {
+              return (
+                <Card
+                  key={item.id}
+                  brand={item.brand}
+                  id={item.id}
+                  image={item.image}
+                  title={item.title}
+                  price={item.price}
+                  select={item.select}
+                  addToCart={addToCart}
+                  addToFavorites={addToFavorites}
+                  showCard={showCard}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

@@ -6,18 +6,18 @@ export function SortMenu({ sortUpdateUp, sortUpdateDown, sortLowToHight, sortHig
     <div className={styles.wrap}>
       <div className={styles.main}>
         <span className={styles.title}>Сортировка по:</span>
-        <button className={styles.sort} onClick={() => sortUpdateUp()}>
+        <div className={styles.sort} onClick={() => sortUpdateUp()}>
           update up
-        </button>
-        <button className={styles.sort} onClick={() => sortUpdateDown()}>
+        </div>
+        <div className={styles.sort} onClick={() => sortUpdateDown()}>
           update down
-        </button>
-        <button className={styles.sort} onClick={() => sortLowToHight()}>
+        </div>
+        <div className={styles.sort} onClick={() => sortLowToHight()}>
           price up
-        </button>
-        <button className={styles.sort} onClick={() => sortHightToLow()}>
+        </div>
+        <div className={styles.sort} onClick={() => sortHightToLow()}>
           price down
-        </button>
+        </div>
       </div>
     </div>
   );

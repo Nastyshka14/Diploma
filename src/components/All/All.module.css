@@ -1,11 +1,10 @@
-.catalog {
+.home__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-.menu__container {
-  width: 300px;
-}
-.active {
-  color: red;
-  background-color: royalblue;
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
 }

@@ -12,10 +12,9 @@ export function FilterMenu({ items, onClickItem }) {
 
   return (
     <div className={styles.filter}>
-      <div className={styles.filter__label}>
-        <span onClick={togglePopup} className={styles.filter__title}>
-          Фильтры
-        </span>
+      <div className={styles.filter__label} onClick={togglePopup}>
+        <span className={styles.filter__title}>Фильтры</span>
+        <div className={styles.filter__icon}></div>
       </div>
       {isVisible && (
         <div className={styles.filter__popup}>

@@ -37,17 +37,16 @@ export function Card({
 
   return (
     <div className={styles.card}>
+      <img className={styles.card__image} src={image} alt="image" onClick={onClickToShowCard} />
       <h3 className={styles.card__brand} onClick={onClickToShowCard}>
         {brand}
       </h3>
       <h3 className={styles.card__title} onClick={onClickToShowCard}>
         {title}
       </h3>
-      <img className={styles.card__image} src={image} alt="image" onClick={onClickToShowCard} />
-
       <p className={styles.card__description}>{description}</p>
-      <div className={styles.card__info}>
-        <h3 className={styles.card__price}>{price}</h3>
+      <h3 className={styles.card__price}>{price}</h3>
+      <div className={styles.card__buttons}>
         <button className={styles.card__add_btn} onClick={onClickAddToCart}>
           Add to bag
         </button>

@@ -13,6 +13,7 @@ import { Trousers } from "../components/Trousers";
 import { Jeans } from "../components/Jeans";
 import { Menu } from "../components/Menu";
 import { Favorites } from "../components/Favorites";
+import { All } from "../components/All";
 export function RootRouter() {
   return (
     <BrowserRouter>
@@ -91,6 +92,9 @@ export function RootRouter() {
           </Route>
           <Route exact path="/homepage">
             <HomePage />
+          </Route>
+          <Route exact path="/All">
+            <All />
           </Route>
           <Route exact path="/favorite">
             <Favorites />

@@ -5,3 +5,18 @@
   color: brown;
   background-color: chartreuse;
 }
+.title {
+  margin: 10px 10px 0;
+  font-weight: 700;
+  font-family: "Lato";
+  font-family: sans-serif;
+}
+.sort {
+  margin: 10px 10px 0;
+  font-weight: 400;
+  font-family: "Lato";
+  font-family: sans-serif;
+}
+.sort:active {
+  color: blueviolet;
+}
