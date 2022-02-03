@@ -1,6 +1,6 @@
 .wrap {
   display: flex;
-  background-color: white;
+
   border: 1px solid black;
 }
 .container {
@@ -13,11 +13,14 @@
 .filters {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
+  width: 913px;
+  background-color: rgb(238, 231, 231);
 }

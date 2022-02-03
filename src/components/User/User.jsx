@@ -1,6 +1,15 @@
+import { useState } from "react";
 import styles from "./User.module.css";
 
 export function User() {
+  const [loginInput, setLoginInput] = useState("");
+  const [passInput, setPassInput] = useState("");
+
+  const onBtnClick = () => {
+    setLoginInput("");
+    setPassInput("");
+  };
+
   return (
     <div className={styles.user__container}>
       <div className={styles.user__window}>
@@ -22,6 +31,8 @@ export function User() {
                   autocomplete="email"
                   className={styles.user__input_input}
                   type="email"
+                  value={loginInput}
+                  onChange={(e) => setLoginInput(e.target.value)}
                 />
               </div>
             </div>
@@ -35,6 +46,8 @@ export function User() {
                 autocomplete="current-password"
                 className={styles.user__input_input}
                 type="password"
+                value={passInput}
+                onChange={(e) => setPassInput(e.target.value)}
               />
             </div>
           </div>
@@ -44,7 +57,8 @@ export function User() {
               aria-label="Войти"
               role="button"
               className={styles.user__entrance_btn}
-              disabled="disabled"
+              // disabled="disabled"
+              onClick={onBtnClick}
             >
               Войти
             </button>

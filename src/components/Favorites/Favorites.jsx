@@ -15,8 +15,7 @@ export function Favorites() {
           </div>
           <div className={styles.card__order}>
             <h3 className={styles.card__price}>{item.price}</h3>
-            <button className={styles.card__add_btn}>Add to bag</button>
-            <button className={styles.card__order_delete_btn}>Удалить товар</button>
+            {/* <button className={styles.card__order_delete_btn}>Удалить товар</button> */}
           </div>
         </div>
       ))}

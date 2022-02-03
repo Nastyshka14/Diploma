@@ -1,11 +1,24 @@
-.catalog {
+.wrap {
+  display: flex;
+
+  border: 1px solid black;
+}
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.menu__container {
-  width: 300px;
+.filters {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  background-color: white;
 }
-.active {
-  color: red;
-  background-color: royalblue;
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 913px;
+  background-color: rgb(238, 231, 231);
 }

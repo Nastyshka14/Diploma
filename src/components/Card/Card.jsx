@@ -11,46 +11,53 @@ export function Card({
   price,
   type,
   brand,
+  count,
   addToCart,
   addToFavorites,
-  showCard,
+  total,
 }) {
   const history = useHistory();
 
-  const onClickAddToCart = () => {
-    const newCard = { title: title, image: image, price: price, brand: brand };
-    addToCart(newCard);
-  };
+  // const onClickAddToCart = (id) => {
+  //   // const newCard = {
+  //   //   title: title,
+  //   //   image: image,
+  //   //   price: price,
+  //   //   brand: brand,
+  //   //   count: count,
+  //   //   id: id,
+  //   // };
+
+  //   addToCart(id);
+  //   total();
+  // };
   const onClickAddToFavorites = () => {
     const newCard = { title: title, image: image, price: price, brand: brand };
     addToFavorites(newCard);
   };
-  const onClickToShowCard = (id) => {
-    history.push(`/card/${id}`);
-    console.log(id);
-    showCard(id);
-  };
 
-  // const clickToShowCard = () => {
-  //   history.push(`/card/${id}`);
-  // };
+  const onClickToShowCard = () => {
+    history.push(`/card/${id}`);
+  };
 
   return (
     <div className={styles.card}>
+      <div></div>
       <img className={styles.card__image} src={image} alt="image" onClick={onClickToShowCard} />
-      <h3 className={styles.card__brand} onClick={onClickToShowCard}>
-        {brand}
-      </h3>
-      <h3 className={styles.card__title} onClick={onClickToShowCard}>
-        {title}
-      </h3>
-      <p className={styles.card__description}>{description}</p>
-      <h3 className={styles.card__price}>{price}</h3>
-      <div className={styles.card__buttons}>
-        <button className={styles.card__add_btn} onClick={onClickAddToCart}>
-          Add to bag
-        </button>
-        <button className={styles.card__like_btn} onClick={onClickAddToFavorites}></button>
+      <div className={styles.card__text}>
+        <h3 className={styles.card__brand} onClick={onClickToShowCard}>
+          {brand}
+        </h3>
+        <h3 className={styles.card__title} onClick={onClickToShowCard}>
+          {title}
+        </h3>
+        <p className={styles.card__description}>{description}</p>
+
+        <div className={styles.card__buttons}>
+          <h3 className={styles.card__price}>{price}</h3>
+          <button className={styles.card__add_btn} onClick={() => addToCart(id)}></button>
+          <button className={styles.card__like_btn} onClick={onClickAddToFavorites}></button>
+        </div>
       </div>
     </div>
   );

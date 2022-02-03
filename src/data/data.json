@@ -7,7 +7,7 @@
     "price": "279.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 3,
@@ -17,7 +17,7 @@
     "price": "279.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 4,
@@ -26,7 +26,7 @@
     "image": "./images/data/3.jpg",
     "price": "219.00 BYN",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 5,
@@ -36,7 +36,7 @@
     "price": "279.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 6,
@@ -46,7 +46,7 @@
     "price": "179.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 7,
@@ -56,7 +56,7 @@
     "price": "179.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 8,
@@ -66,7 +66,7 @@
     "price": "139.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 9,
@@ -76,7 +76,7 @@
     "price": "89.99 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 10,
@@ -86,7 +86,7 @@
     "price": "159.00 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "price": "99.99 BYN",
     "type": "coat",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 12,
@@ -106,7 +106,7 @@
     "price": "59.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 13,
@@ -116,7 +116,7 @@
     "price": "279.00 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 14,
@@ -126,7 +126,7 @@
     "price": "79.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 15,
@@ -136,7 +136,7 @@
     "price": "99.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 16,
@@ -146,7 +146,7 @@
     "price": "69.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 17,
@@ -156,7 +156,7 @@
     "price": "179.00 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 18,
@@ -166,7 +166,7 @@
     "price": "69.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 19,
@@ -176,7 +176,7 @@
     "price": "69.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 20,
@@ -186,7 +186,7 @@
     "price": "159.00 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 21,
@@ -196,7 +196,7 @@
     "price": "69.99 BYN",
     "type": "shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 22,
@@ -206,7 +206,7 @@
     "price": "39.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 23,
@@ -216,7 +216,7 @@
     "price": "59.99 РУБ",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 24,
@@ -226,7 +226,7 @@
     "price": "49.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 25,
@@ -236,7 +236,7 @@
     "price": "59.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 26,
@@ -246,7 +246,7 @@
     "price": "69.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 27,
@@ -256,7 +256,7 @@
     "price": "49.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 28,
@@ -266,7 +266,7 @@
     "price": "49.99 BYN",
     "type": "t-shirt",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 29,
@@ -276,7 +276,7 @@
     "price": "49.99 BYN",
     "type": "t-shirt",
     "brand": "Bershka",
-    "select": false
+    "count": 1
   },
   {
     "id": 30,
@@ -286,7 +286,7 @@
     "price": "99.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 31,
@@ -296,7 +296,7 @@
     "price": "99.99 РУБ",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 32,
@@ -306,7 +306,7 @@
     "price": "59.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 33,
@@ -316,7 +316,7 @@
     "price": "59.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 34,
@@ -326,7 +326,7 @@
     "price": "59.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 35,
@@ -336,7 +336,7 @@
     "price": "59.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 36,
@@ -346,7 +346,7 @@
     "price": "89.99 BYN",
     "type": "trousers",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 37,
@@ -356,7 +356,7 @@
     "price": "69.99 BYN",
     "type": "trousers",
     "brand": "Bershka",
-    "select": false
+    "count": 1
   },
   {
     "id": 38,
@@ -366,7 +366,7 @@
     "price": "69.99 BYN",
     "type": "jeans",
     "brand": "Bershka",
-    "select": false
+    "count": 1
   },
   {
     "id": 39,
@@ -376,7 +376,7 @@
     "price": "69.99 РУБ",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 40,
@@ -386,7 +386,7 @@
     "price": "69.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 41,
@@ -396,7 +396,7 @@
     "price": "99.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 42,
@@ -406,7 +406,7 @@
     "price": "59.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 43,
@@ -416,7 +416,7 @@
     "price": "99.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 44,
@@ -426,7 +426,7 @@
     "price": "59.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 45,
@@ -436,7 +436,7 @@
     "price": "99.99 BYN",
     "type": "jeans",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 46,
@@ -446,7 +446,7 @@
     "price": "69.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 47,
@@ -456,7 +456,7 @@
     "price": "69.99 РУБ",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 48,
@@ -466,7 +466,7 @@
     "price": "69.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 49,
@@ -476,7 +476,7 @@
     "price": "99.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 50,
@@ -486,7 +486,7 @@
     "price": "59.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 51,
@@ -496,7 +496,7 @@
     "price": "99.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 52,
@@ -506,7 +506,7 @@
     "price": "59.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   },
   {
     "id": 53,
@@ -516,6 +516,6 @@
     "price": "99.99 BYN",
     "type": "dress",
     "brand": "Stradivarius",
-    "select": false
+    "count": 1
   }
 ]

@@ -11,7 +11,7 @@ export function Form({ searchCard }) {
   };
 
   return (
-    <div>
+    <div className={styles.form}>
       <input type="text" value={inputValue} placeholder="I search ..." onChange={onInputChange} />
     </div>
   );

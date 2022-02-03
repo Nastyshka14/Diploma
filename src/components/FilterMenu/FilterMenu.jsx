@@ -1,44 +1,51 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./FilterMenu.module.css";
 
-export function FilterMenu({ items, onClickItem }) {
-  const [activeItem, setActiveItem] = useState(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  const onSelectItem = (index) => setActiveItem(index);
-  const togglePopup = () => {
-    setIsVisible(!isVisible);
+export function FilterMenu({ showFilters, showBrands, filter }) {
+  const showFiltersList = useSelector((state) => state.card.showFilters);
+  const showBrandsList = useSelector((state) => state.card.showBrands);
+  const onClickItem = (event) => {
+    showFilters(event.target.id);
+    showBrands(event.target.id);
+    filter(event.target.id);
   };
 
   return (
     <div className={styles.filter}>
-      <div className={styles.filter__label} onClick={togglePopup}>
-        <span className={styles.filter__title}>Фильтры</span>
+      <div className={styles.filter__label}>
+        <span className={styles.filter__title} onClick={() => showFilters()}>
+          Фильтры
+        </span>
         <div className={styles.filter__icon}></div>
       </div>
-      {isVisible && (
-        <div className={styles.filter__popup}>
-          <ul>
-            <li
-              className={activeItem === null ? styles.active : ""}
-              onClick={() => onSelectItem(null)}
-            >
-              All
-            </li>
-            {items &&
-              items.map((name, index) => (
-                <li
-                  className={activeItem === index ? styles.active : ""}
-                  onClick={(e) => {
-                    onSelectItem(index);
-                    togglePopup(e);
-                  }}
-                  key={`${name}_${index}`}
-                >
-                  {name}
-                </li>
-              ))}
-          </ul>
+      {showFiltersList && (
+        <div>
+          <div className={styles.filter__popup}>
+            <ul>
+              <li className={styles.popup__item} id="All" onClick={() => showBrands()}>
+                Brand
+                <div className={styles.filter__popup_checkbox}></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
+      {showBrandsList && (
+        <div>
+          <div className={styles.brand__popup}>
+            <ul>
+              <li className={styles.popup__item} id="All" onClick={(e) => onClickItem(e)}>
+                <div className={styles.brand__popup_checkbox}></div>All
+              </li>
+              <li className={styles.popup__item} id="Bershka" onClick={(e) => onClickItem(e)}>
+                <div className={styles.brand__popup_checkbox}></div>Bershka
+              </li>
+              <li className={styles.popup__item} id="Stradivarius" onClick={(e) => onClickItem(e)}>
+                <div className={styles.brand__popup_checkbox}></div>Stradivarius
+              </li>
+            </ul>
+          </div>
         </div>
       )}
     </div>

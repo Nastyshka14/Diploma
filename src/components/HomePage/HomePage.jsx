@@ -1,28 +1,33 @@
 import styles from "./HomePage.module.css";
-import React, { useEffect, useState } from "react";
 import { Menu } from "../Menu";
-import data from "../../data/data.json";
-import categories from "../../data/categories.json";
 import filters from "../../data/filter.json";
-
 import { SortMenu } from "../SortMenu";
 import { FilterMenu } from "../FilterMenu";
 import { Card } from "../Card";
 import { useDispatch, useSelector } from "react-redux";
 import { ACTIONS } from "../../redux/constants";
-import { useHistory } from "react-router";
 
 export function HomePage() {
   const filteredCards = useSelector((state) => state.card.filteredCards);
 
   const dispatch = useDispatch();
 
-  const addToCart = (newCard) => {
-    dispatch({ type: ACTIONS.ADD_CARD, newCard });
+  const resetFilter = () => {
+    dispatch({ type: ACTIONS.RESET_FILTER });
   };
 
-  const addToFavorites = (newCard) => {
-    dispatch({ type: ACTIONS.ADD_TO_FAVORITES, newCard });
+  const addToCart = (id) => {
+    dispatch({ type: ACTIONS.ADD_CARD, id });
+  };
+  // const total = () => {
+  //   dispatch({ type: ACTIONS.TOTAL });
+  // };
+  const filter = (id) => {
+    dispatch({ type: ACTIONS.FILTER, id });
+  };
+
+  const addToFavorites = (newCard, id) => {
+    dispatch({ type: ACTIONS.ADD_TO_FAVORITES, newCard, id });
   };
 
   const showCard = (id) => {
@@ -30,6 +35,14 @@ export function HomePage() {
   };
   const sortUpdateUp = () => {
     dispatch({ type: ACTIONS.SORT_UPDATE_UP });
+  };
+
+  const showFilters = () => {
+    dispatch({ type: ACTIONS.SHOW_FILTERS });
+  };
+
+  const showBrands = () => {
+    dispatch({ type: ACTIONS.SHOW_BRANDS });
   };
 
   const sortUpdateDown = () => {
@@ -44,24 +57,6 @@ export function HomePage() {
     dispatch({ type: ACTIONS.SORT_HIGHT_TO_LOW });
   };
 
-  // const filterCards = (event) => {
-  //   const selectCoat = cards.filter((card) => card.type === "coat");
-  //   const selectShirt = cards.filter((card) => card.type === "shirt");
-  //   const selectTshirt = cards.filter((card) => card.type === "t-shirt");
-  //   const selectTrousers = cards.filter((card) => card.type === "trousers");
-  //   if (event.target.id === "all") {
-  //     setFilteredCards(cards);
-  //   } else if (event.target.id === "coat") {
-  //     setFilteredCards(selectCoat);
-  //   } else if (event.target.id === "shirt") {
-  //     setFilteredCards(selectShirt);
-  //   } else if (event.target.id === "t-shirt") {
-  //     setFilteredCards(selectTshirt);
-  //   } else if (event.target.id === "trousers") {
-  //     setFilteredCards(selectTrousers);
-  //   }
-  // };
-
   return (
     <div className={styles.wrap}>
       <Menu />
@@ -73,7 +68,7 @@ export function HomePage() {
             sortHightToLow={sortHightToLow}
             sortLowToHight={sortLowToHight}
           />
-          <FilterMenu items={filters} />
+          <FilterMenu showFilters={showFilters} showBrands={showBrands} filter={filter} />
         </div>
         <div className={styles.items}>
           <div className={styles.main}>
@@ -81,12 +76,12 @@ export function HomePage() {
               return (
                 <Card
                   key={item.id}
-                  brand={item.brand}
                   id={item.id}
+                  brand={item.brand}
                   image={item.image}
                   title={item.title}
                   price={item.price}
-                  select={item.select}
+                  count={item.count}
                   addToCart={addToCart}
                   addToFavorites={addToFavorites}
                   showCard={showCard}

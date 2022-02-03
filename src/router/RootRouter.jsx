@@ -14,12 +14,19 @@ import { Jeans } from "../components/Jeans";
 import { Menu } from "../components/Menu";
 import { Favorites } from "../components/Favorites";
 import { All } from "../components/All";
+import { ACTIONS } from "../redux/constants";
+import { useDispatch } from "react-redux";
 export function RootRouter() {
+  const dispatch = useDispatch();
+
+  const resetFilter = () => {
+    dispatch({ type: ACTIONS.RESET_FILTER });
+  };
   return (
     <BrowserRouter>
       <div className={styles.header}>
         <div className={styles.header__content}>
-          <Link to="/homepage">
+          <Link to="/homepage" style={{ textDecoration: "none" }} onClick={resetFilter}>
             <div className={styles.header__menu}>
               <button type="button" className={styles.header__menu_btn}>
                 Меню
@@ -53,14 +60,7 @@ export function RootRouter() {
                 ></button>
               </div>
             </Link>
-            <Link to="/compare">
-              <div className={styles.header__compare}>
-                <button
-                  type="button"
-                  className={`${styles.header__compare_btn} ${styles.header__control}`}
-                ></button>
-              </div>
-            </Link>
+
             <Link to="/favorite">
               <div className={styles.header__favorite}>
                 <button

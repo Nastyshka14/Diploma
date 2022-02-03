@@ -18,66 +18,65 @@ export function All() {
     dispatch({ type: ACTIONS.ADD_CARD, newCard });
   };
 
-  // const show = useSelector((state) => state.card.show);
-
-  // const showFilters = () => {
-  //   dispatch({ type: ACTIONS.SHOW_FILTERS });
-  // };
-
-  const sortReset = () => {
-    dispatch({ type: ACTIONS.SORT_RESET });
+  const addToFavorites = (newCard) => {
+    dispatch({ type: ACTIONS.ADD_TO_FAVORITES, newCard });
   };
 
-  const sortLowToHigh = () => {
+  const sortUpdateUp = () => {
+    dispatch({ type: ACTIONS.SORT_UPDATE_UP });
+  };
+
+  const sortUpdateDown = () => {
+    dispatch({ type: ACTIONS.SORT_UPDATE_DOWN });
+  };
+
+  const sortLowToHight = () => {
     dispatch({ type: ACTIONS.SORT_LOW_TO_HIGHT });
   };
 
-  const sortHighToLow = () => {
+  const sortHightToLow = () => {
     dispatch({ type: ACTIONS.SORT_HIGHT_TO_LOW });
   };
 
-  // const filterCards = (event) => {
-  //   const selectCoat = cards.filter((card) => card.type === "coat");
-  //   const selectShirt = cards.filter((card) => card.type === "shirt");
-  //   const selectTshirt = cards.filter((card) => card.type === "t-shirt");
-  //   const selectTrousers = cards.filter((card) => card.type === "trousers");
-  //   if (event.target.id === "all") {
-  //     setFilteredCards(cards);
-  //   } else if (event.target.id === "coat") {
-  //     setFilteredCards(selectCoat);
-  //   } else if (event.target.id === "shirt") {
-  //     setFilteredCards(selectShirt);
-  //   } else if (event.target.id === "t-shirt") {
-  //     setFilteredCards(selectTshirt);
-  //   } else if (event.target.id === "trousers") {
-  //     setFilteredCards(selectTrousers);
-  //   }
-  // };
+  const filter = (id) => {
+    dispatch({ type: ACTIONS.FILTER, id });
+  };
+
+  const showFilters = () => {
+    dispatch({ type: ACTIONS.SHOW_FILTERS });
+  };
 
   return (
-    <div className={styles.home__container}>
+    <div className={styles.wrap}>
       <Menu />
-      <SortMenu sortReset={sortReset} sortHighToLow={sortHighToLow} sortLowToHigh={sortLowToHigh} />
-      <FilterMenu
-      // items={filters}
-      />
-      <div className={styles.wrap}>
-        <div className={styles.main}>
-          {filteredCards.map((item) => {
-            return (
-              <Card
-                key={item.id}
-                {...item}
-                brand={item.brand}
-                id={item.id}
-                image={item.image}
-                title={item.title}
-                price={item.price}
-                select={item.select}
-                addToCart={addToCart}
-              />
-            );
-          })}
+      <div className={styles.container}>
+        <div className={styles.filters}>
+          <SortMenu
+            sortUpdateUp={sortUpdateUp}
+            sortUpdateDown={sortUpdateDown}
+            sortHightToLow={sortHightToLow}
+            sortLowToHight={sortLowToHight}
+          />
+          <FilterMenu filter={filter} showFilters={showFilters} />
+        </div>
+        <div className={styles.items}>
+          <div className={styles.main}>
+            {filteredCards.map((item) => {
+              return (
+                <Card
+                  key={item.id}
+                  brand={item.brand}
+                  id={item.id}
+                  image={item.image}
+                  title={item.title}
+                  price={item.price}
+                  select={item.select}
+                  addToCart={addToCart}
+                  addToFavorites={addToFavorites}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

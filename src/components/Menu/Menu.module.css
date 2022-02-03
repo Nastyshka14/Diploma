@@ -1,9 +1,10 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .container {
-  width: 400px;
+  width: 280px;
   background-color: #19222a;
   font-weight: 400;
   font-family: "Lato";

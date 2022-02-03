@@ -16,6 +16,7 @@
   font-weight: 400;
   font-family: "Lato";
   font-family: sans-serif;
+  cursor: pointer;
 }
 .sort:active {
   color: blueviolet;

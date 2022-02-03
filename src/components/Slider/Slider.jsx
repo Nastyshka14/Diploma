@@ -13,29 +13,29 @@ export function SliderContainer() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    nextArrow: (
-      <div>
-        <div className={styles.next__slick_arrow}></div>
-      </div>
-    ),
-    prevArrow: (
-      <div>
-        <div className={styles.prev__slick_arrow}></div>
-      </div>
-    ),
+    autoplaySpeed: 3000,
+    // nextArrow: (
+    //   <div>
+    //     <div className={styles.next__slick_arrow}></div>
+    //   </div>
+    // ),
+    // prevArrow: (
+    //   <div>
+    //     <div className={styles.prev__slick_arrow}></div>
+    //   </div>
+    // ),
   };
 
   const slidesData = [
     {
       id: 1,
       src: "https://a.lmcdn.ru/bs2/2/69/w_1788x1122_ru_by.jpg",
-      label: "Dolorem officiis temporibus.",
+      label: "",
     },
     {
       id: 2,
       src: "https://a.lmcdn.ru/pi/bs894x561/2/10/w_1788x1122_6555_az.jpeg",
-      label: "Officia non provident dolor esse et neque.",
+      label: "",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ export function SliderContainer() {
   ];
 
   return (
-    <div className="App">
+    <div className={styles.slider}>
       <div className={styles.slider__wrapper}>
         <Slider {...settings}>
           {slidesData.map((slide) => (

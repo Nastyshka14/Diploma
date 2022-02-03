@@ -1,26 +1,114 @@
 .main {
   display: flex;
+}
+.items {
+  display: flex;
   flex-direction: column;
 }
 .card__name {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: 20px;
 }
 .card__brand {
+  font-family: "Lato";
+  font-family: sans-serif;
   text-transform: uppercase;
 }
+.card__title {
+  font-family: "Lato";
+  font-family: sans-serif;
+}
 .card__image {
-  width: 10%;
+  width: 15%;
+  margin: 5px;
 }
 .card {
   display: flex;
-  margin: 5px;
+  justify-content: space-between;
+  margin: 5px 70px 0 50px;
+  width: 950px;
   border: 2px solid black;
   box-shadow: black;
+  background-color: rgb(243, 226, 226);
+}
+.card__info {
+  display: flex;
 }
 .card__order {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin-right: 50px;
+  font-family: "Lato";
+  font-family: sans-serif;
+}
+.card__price {
+  font-size: 22px;
+}
+.card__order_delete_btn {
+  height: 35px;
+  width: 200px;
+  font-family: "Lato";
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(54, 2, 54);
+  border: 2px solid white;
+}
+.card__order_delete_btn:hover {
+  background-color: rgb(25, 2, 25);
+}
+.title {
+  margin-left: 20px;
+  color: white;
+  font-family: "Lato";
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 42px 50px 0 0;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(243, 226, 226);
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+}
+.total__title {
+  margin: 60px 20px 0;
+  font-size: 18px;
+  font-family: "Lato";
+  font-family: sans-serif;
+}
+.total__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: "Lato";
+  font-family: sans-serif;
+}
+.total__button {
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Lato";
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(54, 2, 54);
+  border: 2px solid white;
+}
+.total__button:hover {
+  background-color: rgb(25, 2, 25);
+}
+.total__price_price {
+  font-family: "Lato";
+  font-family: sans-serif;
+  font-size: 34px;
 }
